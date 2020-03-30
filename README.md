@@ -1,4 +1,5 @@
 # WinHacks | COV-AID
+COV-AID uses blockchain to improve the process of obtaining financial aid during the COVID-19 crisis.
 
 ## Inspiration
 COVID-19 has transformed us humans from normal, socializing creatures to quarantined hermits in the matter of a few months. Although it has most prominently affected the health of millions across the globe, the coronavirus has also jeopardized the state of our economy, to the point where, according to Politico, job loss projections range up to 4.6 million people. Our very own prime minister, Justin Trudeau, has considered offering a $2,000 grant to affected Canadian citizens on a monthly basis. Our group saw lots of flaws with this inefficient approach and sought out a solution to save the government millions of dollars worth of their time, while making sure that the system can perfectly verify if an applicant should receive financial aid. This is why we created COV-AID.
