@@ -1,1 +1,24 @@
-# Winhacks
+# WinHacks | COV-AID
+
+## Inspiration
+COVID-19 has transformed us humans from normal, socializing creatures to quarantined hermits in the matter of a few months. Although it has most prominently affected the health of millions across the globe, the coronavirus has also jeopardized the state of our economy, to the point where, according to Politico, job loss projections range up to 4.6 million people. Our very own prime minister, Justin Trudeau, has considered offering a $2,000 grant to affected Canadian citizens on a monthly basis. Our group saw lots of flaws with this inefficient approach and sought out a solution to save the government millions of dollars worth of their time, while making sure that the system can perfectly verify if an applicant should receive financial aid. This is why we created COV-AID.
+
+## What it does
+COV-AID is a web application that helps improve the processes of receiving financial aid using blockchain technology. A user first logs-in with a Metamask wallet account. Once logged-in, the user can request financial aid by submitting a photo of their government issued identification (health card), where the Google Cloud Vision API and a Javascript algorithm can extract important data (name, card number, birthday, issue date, expiry date). This data is then sent through the blockchain via IPFS to our backend server, which decides if the user is eligible for financial aid or not. If eligible, this will prompt a Metamask transaction and send money to the user. This whole project is decentralized, meaning that fraudulent transactions will not process. Furthermore, we utilize a trustless smart contract in order to administer the payments of financial aid, meaning we are removing the need for an intermediary or a third party to process the financial transaction as a whole. This very idea alone is enough to justify why our project is fundamentally more efficient and secure than any government system. We are creating complete dependency in the wake of DeFi, in a time that is most needed.  
+
+## How We Built It
+The frontend is built entirely with React and our backend is hosted on an express.js server with user ID data stored in a MongoDB database. We used the Google Cloud Vision API, along with a self-created Javascript algorithm, to detect and extract important text data from a health card image. For the blockchain aspect of our project, we used Solidity and Truffle.js to create and compile smart contracts that allow data to be stored on the blockchain. Metamask is used to facilitate transactions and interact with these smart contracts. The trustless smart contract used within the program facilitates the expenditure of financial aid in a very efficient and timeless manner. We also used Ganache to create a local running blockchain instance in order to better increase development times and speed of transactions. The blockchain on the local computer has a record of all the data, and allows us to easily create test accounts for our metamask piece of the program. 
+
+## Challenges We Ran Into
+The most challenging aspect of this project is linking all of our code together at the very end. For instance, we had trouble connecting the Vision API to the frontend server and sending an image path to the API. We also struggled with integrating the blockchain part of our project with the frontend and backend servers. Overall, there was a lot of debugging that was done during the last half of our hacking time. Beyond that, we struggled a lot with finding out a way to create a smart contract with an initial ETH balance, this proved challenging, as there was very little documentation on how to actually achieve it, and a lot of fiddling around with different ideas is what eventually led to the solution.
+
+## Accomplishments that We Are Proud Of
+We are most proud of having accomplished many of our initial goals for this application. We were successfully able to integrate all of our planned APIs despite the struggles and the application itself has much functionality. Overall, we have put our knowledge and experience with these technologies and languages to excellent use.
+
+## What We Learned
+Although some of our work came from expertise and experience from the past, we still spent time learning, for instance, usages of new APIs like Google Cloud and advanced debugging concepts that greatly helped us through the last few hours of hacking. We also attended a few workshops, such as the Google Cloud Hero and internship ones, which were excellent learning opportunities. In particular, we were amazed by the impactful tips given out at the internship workshop and learned much about proper preparation for applications and interviews.
+
+## What's next for COV-AID
+Our project is only available locally, which means it is not deployed to the web with a domain. We plan to do so if given more time with the project.
+
+This was developed by Aditya Keerthi, Daniel Yu, Eric Xiao, and Markos Georghiades.
